@@ -1,4 +1,4 @@
-# 🧠 Blog Summarizer — AI-Powered Article Summarization
+#  Blog Summarizer — AI-Powered Article Summarization
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![Gemini](https://img.shields.io/badge/Google%20Gemini-AI-orange.svg)](https://ai.google.dev)
@@ -9,27 +9,27 @@ An intelligent, production-grade Python CLI tool that scrapes any blog URL (or r
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This tool solves a common developer pain point: blogs and technical articles are getting longer, but your reading time isn't. The Blog Summarizer automates the entire pipeline — from URL to polished summary — in seconds, using state-of-the-art generative AI to preserve context and technical accuracy.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🌐 **URL scraping** — Fetch and extract article content from any public blog
-- 📄 **File input** — Alternatively, summarize from a local `.txt` file
-- 🤖 **Gemini AI** — Uses `gemini-1.5-flash` for fast, accurate summarization
-- 📏 **Hard constraints** — Summary is always ≤300 words and ≤20 sentences
-- 🔁 **Retry logic** — Exponential backoff on API rate limits and transient errors
-- 🛡️ **Edge case handling** — Empty input, invalid URLs, short articles, long articles, missing API key
-- 💾 **Output saving** — Summary auto-saved to `outputs/generated_summary.txt`
-- 📋 **Verbose logging** — Full debug mode available with `--verbose`
-- ✅ **Unit tested** — Pytest test suite covering all core functionality
+-  **URL scraping** — Fetch and extract article content from any public blog
+-  **File input** — Alternatively, summarize from a local `.txt` file
+-  **Gemini AI** — Uses `gemini-1.5-flash` for fast, accurate summarization
+-  **Hard constraints** — Summary is always ≤300 words and ≤20 sentences
+-  **Retry logic** — Exponential backoff on API rate limits and transient errors
+-  **Edge case handling** — Empty input, invalid URLs, short articles, long articles, missing API key
+-  **Output saving** — Summary auto-saved to `outputs/generated_summary.txt`
+-  **Verbose logging** — Full debug mode available with `--verbose`
+-  **Unit tested** — Pytest test suite covering all core functionality
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 blog-summarizer/
@@ -43,9 +43,6 @@ blog-summarizer/
 ├── outputs/
 │   └── generated_summary.txt   # Auto-generated output file
 │
-├── docs/
-│   └── assignment_report.md    # Full internship submission report
-│
 ├── tests/
 │   └── test_summarizer.py      # Pytest unit tests
 │
@@ -57,7 +54,7 @@ blog-summarizer/
 
 ---
 
-## ⚙️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -110,7 +107,7 @@ blog-summarizer/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -159,7 +156,7 @@ GEMINI_API_KEY=AIzaSy...your_key_here
 
 ---
 
-## 🏃 How To Run
+##  How To Run
 
 ### Summarize a Blog from URL
 
@@ -199,31 +196,13 @@ pytest tests/test_summarizer.py -v --cov=src --cov-report=term-missing
 
 ---
 
-## 📸 Example Output
+##  Example Output
 
-```
-─────────────────────────────────────────────────────────────────
-  📝  GENERATED BLOG SUMMARY
-─────────────────────────────────────────────────────────────────
-
-LangSmith has introduced a major CLI update, transforming it into
-an agent-native development platform centered on a new Skills
-system...
-
-[full summary text]
-
-─────────────────────────────────────────────────────────────────
-  Words:     265 / 300
-  Sentences: 18 / 20
-  Status:    ✅ WITHIN LIMITS
-─────────────────────────────────────────────────────────────────
-
-💾 Summary saved to: /path/to/outputs/generated_summary.txt
-```
+![Summary Output](images/output.png)
 
 ---
 
-## 🛡️ Edge Cases Handled
+##  Edge Cases Handled
 
 | Scenario | Handling |
 |---|---|
@@ -243,7 +222,7 @@ system...
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 1. **Hierarchical summarization** — Chunk + map-reduce for articles > 10,000 words
 2. **Multi-URL batch mode** — Summarize multiple blogs in one run

@@ -170,7 +170,7 @@ def run() -> int:
     logger.info(f"Article retrieved: {len(article_text)} characters.")
 
     # ── Generate Summary ─────────────────────────────────────────────────────
-    print("\n⏳ Generating summary using Gemini AI... please wait.\n")
+    print("\n⏳ Generating summary using Groq ... please wait.\n")
     summary = generate_summary(article_text)
 
     if summary is None:
