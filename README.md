@@ -1,10 +1,4 @@
 #  Blog Summarizer — AI-Powered Article Summarization
-
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![Gemini](https://img.shields.io/badge/Google%20Gemini-AI-orange.svg)](https://ai.google.dev)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PEP8](https://img.shields.io/badge/Code%20Style-PEP8-brightgreen.svg)](https://peps.python.org/pep-0008/)
-
 An intelligent, production-grade Python CLI tool that scrapes any blog URL (or reads a local text file) and uses **Google Gemini AI** to generate a concise, professional summary in **≤300 words and ≤20 sentences**.
 
 ---
